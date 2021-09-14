@@ -1,0 +1,8 @@
+version: '2'
+services:
+  starbux:
+    image: starbux:1
+    build: .
+    ports:
+      - 80:8082
+

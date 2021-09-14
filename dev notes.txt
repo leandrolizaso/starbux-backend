@@ -1,0 +1,7 @@
+-The price in drinks and topics are integer because there was no information about the model and the examples were int. The total amount is double because of the discount rules.
+
+-Besides a service usually returns a model object, I made it return the dto to the controller because there was no service composition. If one service would have called another one, it would be better to return a model object.
+
+-The deletes were designed as soft delete because I wanted to have the reference from Item. If it were a hard delete, I should have looked for another strategy.
+
+-@ControllerAdvice was used in order to avoid code duplication in exception management.
